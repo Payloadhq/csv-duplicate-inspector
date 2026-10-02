@@ -1,0 +1,6 @@
+id,name,email,company
+1,Alice,a1@example.com,Acme Inc
+2,Bob,b2@example.com,ACME INC.
+3,Carol,c3@example.com,acme  inc.
+4,Dan,d4@example.com,Globex
+5,Erin,e5@example.com,globex!
