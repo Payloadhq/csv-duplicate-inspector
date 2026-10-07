@@ -1,6 +1,6 @@
-# csv-duplicate-inspector
+# csv-duplicate-inspector by Payload
 
-**Small software that earns its keep.** — a Payload free utility
+**Small software that earns its keep.** A free utility by Payload.
 
 A zero-dependency Python CLI that inspects a CSV for duplicate risks before
 you migrate, import, or deduplicate it: exact-duplicate rows, duplicate
@@ -49,15 +49,15 @@ Near-duplicate clusters in "company" (normalized): 2
 
 ## What it reports
 
-- **Exact-duplicate rows** — byte-identical rows (as parsed), with group
+- **Exact-duplicate rows** - byte-identical rows (as parsed), with group
   counts, share of total rows, and first-seen line numbers. The file is
   streamed; only one hash entry per unique row is kept in memory.
-- **Key-column duplicates** (`--key`) — values occurring more than once,
+- **Key-column duplicates** (`--key`) - values occurring more than once,
   with counts and up to 10 line numbers each.
-- **Near-duplicate clusters** (`--key` + `--near-dup`) — values that match
+- **Near-duplicate clusters** (`--key` + `--near-dup`) - values that match
   after lowercasing and stripping whitespace/punctuation differences, e.g.
   `Acme Inc`, `ACME INC.`, `acme  inc.`
-- **Warnings** — blank lines skipped, ragged rows (field count differs from
+- **Warnings** - blank lines skipped, ragged rows (field count differs from
   the header), with line numbers.
 
 Notes on scope, stated plainly:
@@ -89,18 +89,18 @@ survives a merge, normalize fields across systems, validate against
 HubSpot/Salesforce formats, or produce a migration-ready dataset with an
 audit trail.
 
-For the full merge/normalize/migration workflow — duplicate detection,
-survivor rules, field standardization, and migration-ready output — see the
+For the full merge/normalize/migration workflow - duplicate detection,
+survivor rules, field standardization, and migration-ready output - see the
 **[CRM Dedup & Migration Cleanup Kit](https://payloadtools.gumroad.com/l/crm-dedup-migration-kit)**
 ($149) by Payload.
 
 ## License
 
-MIT — see [LICENSE](LICENSE). Copyright 2026 Payload.
+MIT - see [LICENSE](LICENSE). Copyright 2026 Payload.
 
 ---
 
-**Payload** — small, sharp tools for developers.
+**Payload** - small, sharp tools for developers.
 Developer portal: https://payloadhq.github.io/ ·
 All products: https://payloadtools.gumroad.com/ ·
 Contact: kylers.partners@gmail.com
